@@ -109,7 +109,7 @@ h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
 
@@ -277,6 +277,16 @@ h6 {
   background: #e0fbfc;
   background-size: cover;
   position: relative;
+  z-index: 1;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* set a negative z-index to put it behind the other elements */
 }
 
 
@@ -751,7 +761,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+.awards .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
@@ -759,7 +769,7 @@ section {
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 
-.services .icon-box .icon {
+.awards .icon-box .icon {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -770,114 +780,114 @@ section {
   position: relative;
 }
 
-.services .icon-box .icon i {
+.awards .icon-box .icon i {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
 }
 
-.services .icon-box .icon svg {
+.awards .icon-box .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.services .icon-box .icon svg path {
+.awards .icon-box .icon svg path {
   transition: 0.5s;
   fill: #f5f5f5;
 }
 
-.services .icon-box h4 {
+.awards .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 
-.services .icon-box h4 a {
+.awards .icon-box h4 a {
   color: #45505b;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box p {
+.awards .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.awards .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
-.services .iconbox-blue i {
+.awards .iconbox-blue i {
   color: #47aeff;
 }
 
-.services .iconbox-blue:hover .icon i {
+.awards .iconbox-blue:hover .icon i {
   color: #fff;
 }
 
-.services .iconbox-blue:hover .icon path {
+.awards .iconbox-blue:hover .icon path {
   fill: #47aeff;
 }
 
-.services .iconbox-orange i {
+.awards .iconbox-orange i {
   color: #ffa76e;
 }
 
-.services .iconbox-orange:hover .icon i {
+.awards .iconbox-orange:hover .icon i {
   color: #fff;
 }
 
-.services .iconbox-orange:hover .icon path {
+.awards .iconbox-orange:hover .icon path {
   fill: #ffa76e;
 }
 
-.services .iconbox-pink i {
+.awards .iconbox-pink i {
   color: #e80368;
 }
 
-.services .iconbox-pink:hover .icon i {
+.awards .iconbox-pink:hover .icon i {
   color: #fff;
 }
 
-.services .iconbox-pink:hover .icon path {
+.awards .iconbox-pink:hover .icon path {
   fill: #e80368;
 }
 
-.services .iconbox-yellow i {
+.awards .iconbox-yellow i {
   color: #ffbb2c;
 }
 
-.services .iconbox-yellow:hover .icon i {
+.awards .iconbox-yellow:hover .icon i {
   color: #fff;
 }
 
-.services .iconbox-yellow:hover .icon path {
+.awards .iconbox-yellow:hover .icon path {
   fill: #ffbb2c;
 }
 
-.services .iconbox-red i {
+.awards .iconbox-red i {
   color: #ff5828;
 }
 
-.services .iconbox-red:hover .icon i {
+.awards .iconbox-red:hover .icon i {
   color: #fff;
 }
 
-.services .iconbox-red:hover .icon path {
+.awards .iconbox-red:hover .icon path {
   fill: #ff5828;
 }
 
-.services .iconbox-teal i {
+.awards .iconbox-teal i {
   color: #11dbcf;
 }
 
-.services .iconbox-teal:hover .icon i {
+.awards .iconbox-teal:hover .icon i {
   color: #fff;
 }
 
-.services .iconbox-teal:hover .icon path {
+.awards .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
 
@@ -1133,7 +1143,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
